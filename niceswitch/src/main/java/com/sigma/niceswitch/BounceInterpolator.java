@@ -2,6 +2,9 @@ package com.sigma.niceswitch;
 
 import android.view.animation.Interpolator;
 
+import androidx.annotation.Keep;
+
+@Keep
 public class BounceInterpolator implements Interpolator {
     private double amplitude;
     private double frequency;

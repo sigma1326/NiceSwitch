@@ -19,6 +19,7 @@ import android.view.View;
 import android.view.ViewOutlineProvider;
 
 import androidx.annotation.ColorInt;
+import androidx.annotation.Keep;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
@@ -33,6 +34,7 @@ import static com.sigma.niceswitch.Constants.STATE;
 import static com.sigma.niceswitch.Constants.SWITCHER_ANIMATION_DURATION;
 import static com.sigma.niceswitch.Constants.TRANSLATE_ANIMATION_DURATION;
 
+@Keep
 public class NiceSwitch extends View {
     private float iconRadius = 0f;
     private float iconClipRadius = 0f;

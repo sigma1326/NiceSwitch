@@ -1,5 +1,8 @@
 package com.sigma.niceswitch;
 
+import androidx.annotation.Keep;
+
+@Keep
 public class Constants {
     public static final long SWITCHER_ANIMATION_DURATION = 800L;
     public static final long COLOR_ANIMATION_DURATION = 300L;
