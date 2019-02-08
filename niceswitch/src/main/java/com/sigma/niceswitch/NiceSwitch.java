@@ -359,6 +359,10 @@ public class NiceSwitch extends View {
         }
     }
 
+    public boolean isChecked() {
+        return checked;
+    }
+
     private void forceCheck() {
         currentColor = offColor;
         iconProgress = 1f;

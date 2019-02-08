@@ -321,6 +321,10 @@ public class NiceSwitchRound extends View {
         iconProgress = 1f;
     }
 
+    public boolean isChecked() {
+        return checked;
+    }
+
     public OnCheckedChangedListener getOnCheckedChangedListener() {
         return onCheckedChangedListener;
     }
