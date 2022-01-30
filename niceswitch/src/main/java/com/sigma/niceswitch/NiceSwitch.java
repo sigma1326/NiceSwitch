@@ -355,7 +355,16 @@ public class NiceSwitch extends View {
     public void setChecked(boolean checked) {
         if (this.checked != checked) {
             this.checked = checked;
-            animateSwitch();
+            //animateSwitch();
+            if (!this.checked) {
+                setIconProgress(1f);
+            }
+
+            if (this.checked) {
+                setCurrentColor(onColor);
+            } else {
+                setCurrentColor(offColor);
+            }
         }
     }
 
