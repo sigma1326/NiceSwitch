@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.sigma.niceswitch.NiceSwitch;
+import com.sigma.niceswitch.NiceSwitchRound;
 import com.sigma.niceswitchsample.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,10 +18,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         NiceSwitch niceSwitch = findViewById(R.id.niceSwitch);
-
+        NiceSwitchRound niceSwitchRound = findViewById(R.id.niceSwitchRound);
 
         niceSwitch.setOnCheckedChangedListener(checked -> {
             Toast.makeText(this, checked + "", Toast.LENGTH_SHORT).show();
         });
+
+        niceSwitch.setChecked(false);
+        niceSwitchRound.setChecked(false);
     }
 }
